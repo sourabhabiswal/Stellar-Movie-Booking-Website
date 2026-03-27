@@ -1,8 +1,19 @@
 import React from 'react'
-
+import { dummyShowsData } from '../assets/assets'
 const Movies = () => {
-  return (
-    <div></div>
+  return dummyShowsData.length > 0 ? (
+    <div>
+      <h1>Now Showing</h1>
+      <div>
+        {dummyShowsData.map((movie) => (
+          <MovieCard movie={movie} key={movie.id} />
+        ))}
+      </div>
+    </div>
+  ) : (
+    <div>
+
+    </div>
   )
 }
 
