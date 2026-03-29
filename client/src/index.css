@@ -18,3 +18,11 @@ body{
     background-color: #09090B;
 
 }
+
+body {
+  overflow-x: hidden;
+}
+
+.no-scrollbar{
+    scrollbar-width: none;
+}

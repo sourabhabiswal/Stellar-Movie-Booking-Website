@@ -136,7 +136,7 @@ export const dummyShowsData = [
     {
         "_id": "950387",
         "id": 950387,
-        "title": "A Minecraft Movie",
+        "title": "A Minecraft movies",
         "overview": "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
         "poster_path": "https://image.tmdb.org/t/p/original/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg",
         "backdrop_path": "https://image.tmdb.org/t/p/original/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
@@ -226,7 +226,7 @@ export const dummyDashboardData = {
     "activeShows": [
         {
             "_id": "68352363e96d99513e4221a4",
-            "movie": dummyShowsData[0],
+            "movies": dummyShowsData[0],
             "showDateTime": "2025-06-30T02:30:00.000Z",
             "showPrice": 59,
             "occupiedSeats": {
@@ -237,21 +237,21 @@ export const dummyDashboardData = {
         },
         {
             "_id": "6835238fe96d99513e4221a8",
-            "movie": dummyShowsData[1],
+            "movies": dummyShowsData[1],
             "showDateTime": "2025-06-30T15:30:00.000Z",
             "showPrice": 81,
             "occupiedSeats": {},
         },
         {
             "_id": "6835238fe96d99513e4221a9",
-            "movie": dummyShowsData[2],
+            "movies": dummyShowsData[2],
             "showDateTime": "2025-06-30T03:30:00.000Z",
             "showPrice": 81,
             "occupiedSeats": {},
         },
         {
             "_id": "6835238fe96d99513e4221aa",
-            "movie": dummyShowsData[3],
+            "movies": dummyShowsData[3],
             "showDateTime": "2025-07-15T16:30:00.000Z",
             "showPrice": 81,
             "occupiedSeats": {
@@ -263,7 +263,7 @@ export const dummyDashboardData = {
         },
         {
             "_id": "683682072b5989c29fc6dc0d",
-            "movie": dummyShowsData[4],
+            "movies": dummyShowsData[4],
             "showDateTime": "2025-06-05T15:30:00.000Z",
             "showPrice": 49,
             "occupiedSeats": {
@@ -278,7 +278,7 @@ export const dummyDashboardData = {
         },
         {
             "_id": "68380044686d454f2116b39a",
-            "movie": dummyShowsData[5],
+            "movies": dummyShowsData[5],
             "showDateTime": "2025-06-20T16:00:00.000Z",
             "showPrice": 79,
             "occupiedSeats": {
@@ -296,7 +296,7 @@ export const dummyBookingData = [
         "user": { "name": "GreatStack", },
         "show": {
             _id: "68352363e96d99513e4221a4",
-            movie: dummyShowsData[0],
+            movies: dummyShowsData[0],
             showDateTime: "2025-06-30T02:30:00.000Z",
             showPrice: 59,
         },
@@ -309,7 +309,7 @@ export const dummyBookingData = [
         "user": { "name": "GreatStack", },
         "show": {
             _id: "68352363e96d99513e4221a4",
-            movie: dummyShowsData[0],
+            movies: dummyShowsData[0],
             showDateTime: "2025-06-30T02:30:00.000Z",
             showPrice: 59,
         },
@@ -322,7 +322,7 @@ export const dummyBookingData = [
         "user": { "name": "GreatStack", },
         "show": {
             _id: "68352363e96d99513e4221a4",
-            movie: dummyShowsData[0],
+            movies: dummyShowsData[0],
             showDateTime: "2025-06-30T02:30:00.000Z",
             showPrice: 59,
         },
