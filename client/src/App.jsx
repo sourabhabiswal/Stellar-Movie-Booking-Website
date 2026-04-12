@@ -9,10 +9,20 @@ import Mybookings from './pages/Mybookings'
 import Favorite from './pages/Favorite'
 import { Toaster } from 'react-hot-toast'
 import Footer from './components/Footer'
+import Layout from './pages/admin/Layout'
+import { useAppContext } from './context/AppContext'
+import { SignIn } from '@clerk/clerk-react'
+import Dashboard from './pages/admin/Dashboard'
+import AddShow from './pages/admin/AddShow'
+import ListShow from './pages/admin/ListShow'
+import ListBookings from './pages/admin/ListBookings'
+
 
 const App = () => {
     
     const isAdminRoute = useLocation().pathname.startsWith('/admin')
+
+    const { user } = useAppContext()
   
   return (
     <>
@@ -25,6 +35,19 @@ const App = () => {
         <Route path='/movies/:id/:date' element={<SeatLayout/>} />
         <Route path='/my-bookings' element={<Mybookings/>} />
         <Route path='/favorites' element={<Favorite/>} />
+
+        <Route path='/admin/*' element={user ? <Layout/> : (
+          <div className='min-h-screen flex justify-center items-center'>
+            <SignIn fallbackRedirectUrl={'/admin'} />
+          </div>
+        )}>
+          <Route index element={<Dashboard />} />
+          <Route path='add-show' element={<AddShow />} />
+          <Route path='list-shows' element={<ListShow />} />
+          <Route path='list-bookings' element={<ListBookings />} />
+
+        </Route>
+      
       </Routes>
        {!isAdminRoute && <Footer/>}
     </>

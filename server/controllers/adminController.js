@@ -1,6 +1,6 @@
 import { Booking } from "../models/Booking.js";
 import User from "../models/user.js";
-import { Show } from "../movie/Show.js"
+import Show from "../models/Show.js"
 
 
 

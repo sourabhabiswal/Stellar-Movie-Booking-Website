@@ -1,12 +1,13 @@
-
-
 import express from "express";
-import { protectAdmin } from './../middleware/auth.js';
-import { createBooking, getOccupiedSeats } from './../controllers/booking.controller.js';
+import { requireAuth } from "@clerk/express";
+
+
+import { createBooking, getOccupiedSeats } from '../controllers/bookingController.js';
+
 const bookingRoutes= express.Router()
 
 
-bookingRoutes.post("/booking", protectAdmin, createBooking)
+bookingRoutes.post("/", requireAuth(), createBooking)
 
 bookingRoutes.get("/seats/:showId", getOccupiedSeats)
 

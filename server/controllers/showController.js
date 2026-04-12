@@ -10,7 +10,7 @@ export const getNowplayingMovies = async (req, res) => {
         })
 
         const movies = data.results;
-        res.json({ success: true, movies: movies })
+        res.json({ success: true, shows: movies })
     } catch (error) {
         console.error(error);
         res.json({ success: false, message: error.message});

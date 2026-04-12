@@ -1,5 +1,5 @@
 import { Booking } from "../models/Booking.js";
-import { Show } from "../models/Show.js";
+import Show from "../models/Show.js";
 
 
 //function to check to acailability of selected seacts for amovie
